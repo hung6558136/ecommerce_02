@@ -13,4 +13,11 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require i18n
+//= require i18n/translations
+//= require bootstrap.min
+//= require bootstrapValidator.min
+//= require select2
+//= require select2-full
+//= require select2_locale_en
 //= require_tree .
