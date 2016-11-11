@@ -1,0 +1,5 @@
+<%= select_tag "parent_id", options_for_select(
+  nested_set_options(Category) { |category|
+    "#{'-' * category.level} #{category.name}" }),
+  {class: "category_select form-control", id: "category_select",
+    include_blank: t(".none")} %>
