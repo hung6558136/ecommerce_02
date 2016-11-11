@@ -34,3 +34,30 @@ en:
     url_admin_category: "/admin/categories/"
     category:
       notice_blank: "Category name can not blank!"
+      login: "Log in"
+      signup: "Sign up"
+      about: "About"
+      help: "Help"
+      laptop: "Laptop"
+  devise:
+    sessions:
+      new:
+        login: "Log in"
+    registrations:
+      new:
+        signup: "Sign up"
+      edit:
+        password_notice: " (leave blank if you don't want to change it)"
+        minimum: " characters minimum)"
+        current_password_notice:
+          " (we need your current password to confirm your changes)"
+        symbol: "("
+        watting: "Currently waiting confirmation for: "
+    shared:
+      links:
+        forgot: "Forgot your password?"
+        signup: "Sign up"
+        not_receive_confirmation: "Didn't receive confirmation instructions?"
+        not_receive_unlock: "Didn't receive unlock instructions?"
+        signin_with: "Sign in with #{OmniAuth::Utils.camelize(provider)}"
+        login: "Log in"
