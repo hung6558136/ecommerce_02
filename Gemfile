@@ -16,6 +16,7 @@ gem "config"
 gem "bootstrap-validator-rails", "~> 0.5.3"
 gem "select2-rails", "~> 4.0", ">= 4.0.3"
 gem "devise"
+gem "awesome_nested_set"
 
 group :development, :test do
   gem "byebug", platform: :mri

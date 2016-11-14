@@ -18,3 +18,12 @@
  *= require select2-bootstrap
  *= require_tree .
  */
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  padding-top: 70px;
+}

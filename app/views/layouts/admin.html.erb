@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title><%= t("root_title") %></title>
+  <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag "application", media: "all",
+    "data-turbolinks-track": "reload" %>
+  <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+  <%= stylesheet_link_tag "admin/index" %>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <%= render partial: "layouts/header" %>
+  </div>
+  <div class="content content-application">
+    <div class="left-menu">
+      <ul class="list-left-menu">
+        <li><%= link_to t(".category"), admin_categories_path,
+          class: "list-group-item" %></li>
+      </ul>
+    </div>
+    <div class="admin-content">
+      <%= yield %>
+    </div>
+  </div>
+  <div class="footer">
+    <%= render partial: "layouts/footer" %>
+  </div>
+</div>
+</body>
+</html>

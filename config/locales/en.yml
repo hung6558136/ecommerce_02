@@ -1,2 +1,28 @@
 en:
   root_title: "E Commerce"
+  layouts:
+    header:
+      laptop: "Laptop"
+      help: "Help"
+      about: "About"
+      sign_up: "Sign Up"
+      login: "Login"
+  admin:
+    index:
+      category: "Category"
+    categories:
+      index:
+        create: "Create category"
+        header_modal: "Create category"
+        parent_category: "Parent category"
+        cancel: "Cancel"
+        save: "Save"
+      create:
+        success: "true"
+        fail: "false"
+      category_select:
+        none: "None"
+  js:
+    url_admin_category: "/admin/categories/"
+    category:
+      notice_blank: "Category name can not blank!"
