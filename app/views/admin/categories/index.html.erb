@@ -1,9 +1,19 @@
-<%= stylesheet_link_tag "admin/categories/index" %>
+<%= stylesheet_link_tag "admin/categories/category" %>
 
 <div class="content-categories">
-  <button class="btn btn-default" id="btn-create-category">
-    <%= t ".create" %>
-  </button>
+  <div class="action-category">
+    <button class="btn btn-default btn-create-category" id="btn-create-category">
+      <%= t ".create" %>
+    </button>
+    <form>
+      <input type="text" id="tf-search-category" class="form-control"
+        placeholder="<%= t ".placeholder_category" %>">
+      <button class="btn btn-default btn-search"
+        id="btn-search-category" type="submit">
+        <%= t ".search" %>
+      </button>
+    </form>
+  </div>
   <div class="modal fade" id="md-create-category" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -43,6 +53,9 @@
         </div>
       </div>
     </div>
+  </div>
+  <div class="list-category" id="list-category">
+    <%= render partial: "list", locals: {categories: @categories} %>
   </div>
 </div>
 

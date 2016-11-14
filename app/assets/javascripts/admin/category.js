@@ -11,6 +11,10 @@ var category = {
       event.preventDefault();
       category.save_category();
     });
+    $('#btn-search-category').click(function (event) {
+      event.preventDefault();
+      category.search_category();
+    });
   },
   
   show_create_category_modal: function () {
@@ -30,6 +34,17 @@ var category = {
       {category: category},
       function (data, status) {
       }, 'json');
+  },
+  
+  search_category: function () {
+    $.get(I18n.t('js.url_admin_category'),
+      {
+        q: $('#tf-search-category').val(),
+        page: 1
+      },
+      function (data, status) {
+        $('#list-category').html(data);
+      }, 'html');
   }
 };
 
