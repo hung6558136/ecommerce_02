@@ -12,11 +12,19 @@ en:
       category: "Category"
     categories:
       index:
-        create: "Create category"
+        create: "Create"
         header_modal: "Create category"
         parent_category: "Parent category"
         cancel: "Cancel"
         save: "Save"
+        search: "Search"
+        placeholder_category: "Enter category name..."
+      list:
+        delete: "Delete"
+        edit: "Edit"
+        name: "Category name"
+        action: "Action"
+        total: "Total product"
       create:
         success: "true"
         fail: "false"
