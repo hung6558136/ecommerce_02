@@ -30,6 +30,17 @@ en:
         fail: "false"
       category_select:
         none: "None"
+    users:
+      index:
+        listuser: "List users"
+        search: "Search"
+        placeholder_user: "Enter email or name"
+        userid: "User ID"
+        username: "Name"
+        signupdate: "Signup date"
+        email: "Email"
+      users:
+        edit: "Edit"
   js:
     url_admin_category: "/admin/categories/"
     category:

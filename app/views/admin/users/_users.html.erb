@@ -1,0 +1,14 @@
+<% @users.each_with_index do |user| %>
+  <tr>
+    <td><%= label_tag :userid, user.id %></td>
+    <td><%= user.first_name %></td>
+    <td><%= user.last_name %></td>
+    <td><%= user.email %></td>
+    <td><%= user.created_at %></td>
+    <td>
+      <button type="button" class="btn btn-info">
+        <%= t ".edit" %>
+      </button>
+    </td>
+  </tr>
+<% end %>
