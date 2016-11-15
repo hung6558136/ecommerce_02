@@ -13,3 +13,4 @@ Rails.application.config.assets.precompile +=
   %w( admin/categories/category.css )
 Rails.application.config.assets.precompile += %w( admin/admin.css )
 Rails.application.config.assets.precompile += %w( admin/category.js )
+Rails.application.config.assets.precompile += %w( admin/user.js )

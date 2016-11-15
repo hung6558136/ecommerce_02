@@ -1,4 +1,4 @@
-<div class="action-user">
+  <div class="action-user">
   <%= form_tag admin_users_path, method: :get, id: "search-form" do %>
     <%= text_field_tag :search, params[:search], class: "form-control",
       placeholder: (t ".placeholder_user"), id: "tf-search-user" %>
@@ -23,3 +23,5 @@
   </table>
   <%= paginate @users %>
 </div>
+
+<%= javascript_include_tag "admin/user" %>

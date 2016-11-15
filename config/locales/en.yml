@@ -41,6 +41,15 @@ en:
         email: "Email"
       users:
         edit: "Edit"
+        view: "View"
+        profile: "Profile"
+        avatar: "Avatar:"
+        firstname: "First name:"
+        lastname: "Last name:"
+        email: "Email:"
+        address: "Address:"
+        cancel: "Cancel"
+        update: "Update"
   js:
     url_admin_category: "/admin/categories/"
     category:
